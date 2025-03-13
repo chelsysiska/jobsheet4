@@ -2,7 +2,7 @@
 
 @section('title', 'About - MyApp')
 
-@section ('content')
+@section('content')
 <div class="container my-5">
     <h1 class="text-center mb-4">Hubungi Kami</h1>
     <form action="#" method="POST" enctype="multipart/form-data">
@@ -29,14 +29,14 @@
                 <label class="text-gray-700" for="pria">Pria</label>
             </div>
             <div class="flex items-center mb-2">
-                <input class="mr-2 leading-tight" type="radio" name="jenis_kelamin" id="wanita" value="wanita" checked>
+                <input class="mr-2 leading-tight" type="radio" name="jenis_kelamin" id="wanita" value="wanita">
                 <label class="text-gray-700" for="wanita">Wanita</label>
             </div>
         </div>
 
         <div class="mb-3">
-            <label for="name" class="form-label">Subject</label>
-            <select name="form-select" id="subject" name="subject" required>
+            <label for="subject" class="form-label">Subject</label>
+            <select class="form-select" id="subject" name="subject" required>
                 <option value="">Pilih subjek pesan</option>
                 <option value="pertanyaan">Pertanyaan</option>
                 <option value="masukkan">Masukkan</option>
@@ -46,23 +46,23 @@
 
         <div class="mb-3">
             <label for="message" class="form-label">Pesan</label>
-            <textarea class="form-control" id="message" name="message" row="5" placeholder="Tulis pesan Anda di sini..."required></textarea>
+            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
         </div>
 
         <div class="mb-3">
-            <label for="attachment" class=""form-label>Lampiran</label>
+            <label for="attachment" class="form-label">Lampiran</label>
             <input type="file" class="form-control" id="attachment" name="attachment">
         </div>
 
         <div class="mb-3 form-check">
             <div class="flex items-center">
-            <input type="checkbox" class="mr-2 leading-tight" id="terms" name="terms" required>
-            <label class="form-check-input" for="terms">Saya menyetujui syarat dan ketentuan</label>
+                <input type="checkbox" class="mr-2 leading-tight" id="terms" name="terms" required>
+                <label class="form-check-label" for="terms">Saya menyetujui syarat dan ketentuan</label>
             </div>
-            
         </div>
 
         <button type="submit" class="btn btn-primary">Kirim pesan</button>
+        <a href="{{ route('home')}}" class="btn btn-primary">Kembali</a>
     </form>
 </div>
 @endsection
