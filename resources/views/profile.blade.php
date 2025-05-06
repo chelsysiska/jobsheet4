@@ -31,14 +31,6 @@
                     </div>
                     @endif
                     
-                    @if(!empty($profile['experience']))
-                    <h5 class="mt-4">Pengalaman:</h5>
-                    <ul class="list-group">
-                        @foreach($profile['experience'] as $exp)
-                        <li class="list-group-item">{{ $exp }}</li>
-                        @endforeach
-                    </ul>
-                    @endif
                     
                     @if(!empty($profile['hobbies']))
                     <h5 class="mt-4">Hobi:</h5>

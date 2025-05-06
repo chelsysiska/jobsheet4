@@ -62,7 +62,7 @@
         </div>
 
         <button type="submit" class="btn btn-primary">Kirim pesan</button>
-        <a href="{{ route('home')}}" class="btn btn-primary">Kembali</a>
+        <a href="{{ route('about')}}" class="btn btn-primary">Kembali</a>
     </form>
 </div>
 @endsection
